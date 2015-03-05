@@ -402,7 +402,7 @@
             if (!hasPointerEvents) {
                 this.dragEl[0].style.visibility = 'visible';
             }
-            if (this.pointEl.hasClass(opt.handleClass)) {
+            if (this.pointEl.parent().hasClass(opt.itemClass)) {
                 this.pointEl = this.pointEl.parent(opt.itemNodeName);
             }
             if (this.pointEl.hasClass(opt.emptyClass)) {
